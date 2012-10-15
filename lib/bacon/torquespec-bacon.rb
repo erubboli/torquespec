@@ -1,9 +1,13 @@
+class Bacon::Context
+    include TorqueSpec
+end
+
 TorqueSpec.remote do
     module BaconExtension
         def deploy(*descriptiors)
         end
     end
-    def Bacon::Context
+    class Bacon::Context
         include BaconExtension
     end
 end
